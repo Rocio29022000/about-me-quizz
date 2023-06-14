@@ -82,7 +82,7 @@ function quiz(){
 
 function numberGuesser(){
     // let correct_ans = 16
-    let ans = prompt("Guess my favourite number! You have 4 attempts!")
+    let ans = prompt("Guess my favourite number! You have 4 attempts! Hint: It's between 1-100")
     let counter = 1
     let lives = 4
 
@@ -90,20 +90,20 @@ function numberGuesser(){
         lives = 3 - i
         console.log("lives remaining: " + lives)
         if (lives == 0){
-            alert("Sorry, no more chances...")
+            alert("Sorry, no more chances... The correct answer was 16")
         } else if (ans < 16){
             alert("Too low, try again!")
-            ans = prompt("Guess my favourite number! You have 4 attempts!")
+            ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
         } else if (ans > 16) {
             alert("Too high! Try again!")
-            ans = prompt("Guess my favourite number! You have 4 attempts!")
+            ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
         } else if (ans == 16){
             alert("Spot on!")
             break
         }
         else{
             alert("Your answer is invalid please try again ")
-            ans = prompt("Guess my favourite number! You have 4 attempts!")
+            ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
         }
     }
 }
