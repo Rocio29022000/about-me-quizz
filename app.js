@@ -1,7 +1,10 @@
+"use strict"
+//Introduction
 let user = prompt("Oh Hello there! What is your name?")
 alert("Lovely name " + user + " Very nice to meet you!")
 confirm(user + " Would you like to take a look at my page?")
 
+//Quizz
 function quiz(){
     alert("Great! Let's see if you've paid attention! Lets start the quiz... ")
     confirm("Oh wait almost forgot! 1 rule; please answer with yes/no or y/n. If not... you will regret...Amazing now that thats clear! Are you ready?")
