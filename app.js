@@ -64,18 +64,18 @@ function quiz(){
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
         goal = prompt("Is my goal to make this world a better place? ".toLowerCase())
     }
-    let random = prompt("Bit of a random one! Do I play 7 instruments?".toLowerCase())
+    let instruments = prompt("Do I play 7 instruments?".toLowerCase())
     while(true)
-    if (random == "yes" || random == "y"){
+    if (instruments == "yes" || instruments == "y"){
         alert("Wrong! Who do you think I am??? I only play 6!")
         // console.log("Wrong!")
         break
-    } else if(random == "no" || random == "n"){
+    } else if(instruments == "no" || instruments == "n"){
         alert("I only play 6...")
         break
     } else{
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        random = prompt("Bit of a random one! Do I play 7 instruments?".toLowerCase())
+        instruments = prompt("Do I play 7 instruments?".toLowerCase())
     }
     alert("Amazing " + user + " you have completed the quiz!")
 }
