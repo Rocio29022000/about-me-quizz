@@ -77,5 +77,21 @@ function quiz(){
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
         instruments = prompt("Do I play 7 instruments?".toLowerCase())
     }
+
+    // let correct_ans = 16
+    let ans = prompt("Guess my favourite number! You have 4 attempts!")
+    for (let i= 0; i < 4; i ++){
+        if (ans > 16){
+            alert("Too high! Try again!")
+        } else if (and < 16){
+            alert("Too low, try again!")
+        } else if (ans == NaN) {
+            alert("Your answer is invalid please try again ")
+            let ans = prompt("Guess my favourite number! You have 4 attempts!")
+        } else{
+            alert("Spot on!")
+            break
+        }
+    }
     alert("Amazing " + user + " you have completed the quiz!")
 }
