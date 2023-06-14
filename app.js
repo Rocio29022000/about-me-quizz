@@ -64,7 +64,7 @@ function quiz(){
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
         goal = prompt("Is my goal to make this world a better place? ".toLowerCase())
     }
-    let instruments = prompt("Do I play 7 instruments?".toLowerCase())
+    let instruments = prompt("Sneaky one: Do I play 7 instruments?".toLowerCase())
     while(true)
     if (instruments == "yes" || instruments == "y"){
         alert("Wrong! Who do you think I am??? I only play 6!")
