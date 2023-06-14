@@ -74,4 +74,5 @@ function quiz(){
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
         random = prompt("Bit of a random one! Do I play 7 instruments?".toLowerCase())
     }
+    alert("Amazing " + user + " you have completed the quiz!")
 }
