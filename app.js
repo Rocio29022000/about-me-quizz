@@ -5,6 +5,12 @@ let user = prompt("Oh Hello there! What is your name?")
 alert("Lovely name " + user + " Very nice to meet you!")
 confirm(user + " Would you like to take a look at my page?")
 
+
+// //New arrays
+// let questions = ["Am I from barcelona?", "Did I move schools often?", "Did I work for CMR Surgical?", "Is my goal to make this world a better place? ", "Sneaky one: Do I play 7 instruments?"]
+// let answers = ["no", ""]
+
+
 //Quiz
 function quiz(){
     alert("Great! Let's see if you've paid attention! Lets start the quiz... ")
@@ -123,10 +129,13 @@ function seventhQ(){
     counter = 5 - i
     if (counter == 0){
         alert("You have run out of attempts")
-    } else if (guess == 40 || guess == 47 || guess == 44){
+    } else if (guess == siblingsage[6]|| guess == siblingsage[7] || guess == siblingsage[8] ){
             alert("Correct!")
             break
     } else{
         guess = prompt("Wrong! you have " + counter + " attempts. The options are " + siblingsage )
     }
 }}
+
+// || guess == 47 || guess == 44 
+// , 9, 10]
