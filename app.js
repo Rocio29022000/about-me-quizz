@@ -6,91 +6,30 @@ alert("Lovely name " + user + " Very nice to meet you!")
 confirm(user + " Would you like to take a look at my page?")
 
 
-// //New arrays
-// let questions = ["Am I from barcelona?", "Did I move schools often?", "Did I work for CMR Surgical?", "Is my goal to make this world a better place? ", "Sneaky one: Do I play 7 instruments?"]
-// let answers = ["no", ""]
-
-
-//Quiz
-function quiz(){
+// //New arrays=
+function quizA(){
+    let questions = ["Am I from barcelona?", "Did I move schools often?", "Did I work for CMR Surgical?", "Is my goal to make this world a better place? ", "Sneaky one: Do I play 7 instruments?"]
+    let answers = ["no", "no", "yes", "yes", "no"]
+    let poss_ans = ["n", "n", "y", "y", "n"]
+    let ans = ""
     alert("Great! Let's see if you've paid attention! Lets start the quiz... ")
     confirm("Oh wait almost forgot! 1 rule; please answer with yes/no or y/n. If not... you will regret...Amazing now that thats clear! Are you ready?")
     let points = 0
-    let birthplace = prompt("Am I from barcelona?".toLowerCase())
-    while(true)
-    if (birthplace == "yes" || birthplace == "y"){
-        alert("Wrong! You didn't read my page did you?")
-        // console.log("Wrong! You didn't read my page did you?")
-        break
-    } else if(birthplace == "no" || birthplace == "n"){
-        alert("Correct! Andalucia all the way!")
-        points ++
-        break
-    } else{
-        alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        birthplace = prompt("Am I from barcelona?".toLowerCase())
-    }
-
-    let education = prompt("Did I move schools often?".toLowerCase())
-    while(true)
-    if (education == "yes" || education == "y"){
-        alert("Wrong! Not even once!")
-        // console.log("Wrong! Not even once!")
-        break
-    } else if(education == "no" || education == "n"){
-        alert("I sure didnt! Not even once!")
-        points ++
-        break
-    } else{
-        alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        education = prompt("Did I move schools often?".toLowerCase())
-    }
-
-    let experience = prompt("Did I work for CMR Surgical?".toLowerCase())
-    while(true)
-    if (experience == "yes" || experience == "y"){
-        alert("Correct!")
-        points ++
-        break
-    } else if(experience == "no" || experience == "n"){
-        alert("Wrong!")
-        // console.log("Wrong!")
-        break
-    } else{
-        alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        experience = prompt("Did I work for CMR Surgical?".toLowerCase())
-    }
-
-    let goal = prompt("Is my goal to make this world a better place? ".toLowerCase())
-    while(true)
-    if (goal == "yes" || goal == "y"){
-        alert("As cheesy as it may sound... (puking sound)")
-        points ++
-        break
-    } else if(goal == "no" || goal == "n"){
-        alert("Is this not everyones goal?")
-        // console.log("Wrong!")
-        break
-    } else{
-        alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        goal = prompt("Is my goal to make this world a better place? ".toLowerCase())
-    }
-    let instruments = prompt("Sneaky one: Do I play 7 instruments?".toLowerCase())
-    while(true)
-    if (instruments == "yes" || instruments == "y"){
-        alert("Wrong! Who do you think I am??? I only play 6!")
-        // console.log("Wrong!")
-        break
-    } else if(instruments == "no" || instruments == "n"){
-        alert("I only play 6...")
-        points ++
-        break
-    } else{
-        alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
-        instruments = prompt("Do I play 7 instruments?".toLowerCase())
+    for (let i = 0; i < questions.length; i ++){
+        ans = prompt(questions[i]).toLocaleLowerCase()
+        if (ans == answers[i] || ans == poss_ans[i] ){
+            alert("Correct!")
+            points ++
+        } else if (answers.includes(ans) == false && poss_ans.includes(ans) == false){
+            alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
+            points --
+        } else{
+            alert("Wrong!")
+        }
     }
     alert("Amazing " + user + " you have completed the quiz! You scored: " + points + " points." )
 }
+
 //Number guesser game
 function numberGuesser(){
     const correct_ans = Math.floor(Math.random() * 10 + 1);
@@ -136,6 +75,3 @@ function seventhQ(){
         guess = prompt("Wrong! you have " + counter + " attempts. The options are " + siblingsage )
     }
 }}
-
-// || guess == 47 || guess == 44 
-// , 9, 10]
