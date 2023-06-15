@@ -1,14 +1,15 @@
 "use strict"
+
 //Introduction
 let user = prompt("Oh Hello there! What is your name?")
 alert("Lovely name " + user + " Very nice to meet you!")
 confirm(user + " Would you like to take a look at my page?")
 
-//Quizz
+//Quiz
 function quiz(){
     alert("Great! Let's see if you've paid attention! Lets start the quiz... ")
     confirm("Oh wait almost forgot! 1 rule; please answer with yes/no or y/n. If not... you will regret...Amazing now that thats clear! Are you ready?")
-    
+    let points = 0
     let birthplace = prompt("Am I from barcelona?".toLowerCase())
     while(true)
     if (birthplace == "yes" || birthplace == "y"){
@@ -17,6 +18,7 @@ function quiz(){
         break
     } else if(birthplace == "no" || birthplace == "n"){
         alert("Correct! Andalucia all the way!")
+        points ++
         break
     } else{
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
@@ -31,6 +33,7 @@ function quiz(){
         break
     } else if(education == "no" || education == "n"){
         alert("I sure didnt! Not even once!")
+        points ++
         break
     } else{
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
@@ -41,6 +44,7 @@ function quiz(){
     while(true)
     if (experience == "yes" || experience == "y"){
         alert("Correct!")
+        points ++
         break
     } else if(experience == "no" || experience == "n"){
         alert("Wrong!")
@@ -55,6 +59,7 @@ function quiz(){
     while(true)
     if (goal == "yes" || goal == "y"){
         alert("As cheesy as it may sound... (puking sound)")
+        points ++
         break
     } else if(goal == "no" || goal == "n"){
         alert("Is this not everyones goal?")
@@ -72,32 +77,32 @@ function quiz(){
         break
     } else if(instruments == "no" || instruments == "n"){
         alert("I only play 6...")
+        points ++
         break
     } else{
         alert("You had been warned... Minus 1 point for you! keep up the good work and you will win the record for biggest (L)")
         instruments = prompt("Do I play 7 instruments?".toLowerCase())
     }
-    alert("Amazing " + user + " you have completed the quiz!")
+    alert("Amazing " + user + " you have completed the quiz! You scored: " + points + " points." )
 }
-
+//Number guesser game
 function numberGuesser(){
-    // let correct_ans = 16
-    let ans = prompt("Guess my favourite number! You have 4 attempts! Hint: It's between 1-100")
-    let counter = 1
+    const correct_ans = Math.floor(Math.random() * 10 + 1);
+    let ans = prompt("Guess the number! You have 4 attempts! Hint: It's between 1-10")
     let lives = 4
 
     for (let i= 0; i < 4; i ++){
         lives = 3 - i
         console.log("lives remaining: " + lives)
         if (lives == 0){
-            alert("Sorry, no more chances... The correct answer was 16")
-        } else if (ans < 16){
+            alert("Sorry, no more chances... The correct answer was " + correct_ans)
+        } else if (ans < correct_ans){
             alert("Too low, try again!")
             ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
-        } else if (ans > 16) {
+        } else if (ans > correct_ans) {
             alert("Too high! Try again!")
             ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
-        } else if (ans == 16){
+        } else if (ans == correct_ans){
             alert("Spot on!")
             break
         }
@@ -106,4 +111,22 @@ function numberGuesser(){
             ans = prompt("Guess my favourite number! You have: " + lives + " more attempts!")
         }
     }
+
 }
+
+//Question 7
+function seventhQ(){
+    let siblingsage = [20, 25, 30, 36, 41, 29, 40, 47, 44, 34, 50 ]
+    let counter
+    let guess = prompt("Let's try a guessing game... Guess any of my siblings ages. You have 6 attempts. The options are " + siblingsage )
+    for (let i = 0; i < 6; i++){
+    counter = 5 - i
+    if (counter == 0){
+        alert("You have run out of attempts")
+    } else if (guess == 40 || guess == 47 || guess == 44){
+            alert("Correct!")
+            break
+    } else{
+        guess = prompt("Wrong! you have " + counter + " attempts. The options are " + siblingsage )
+    }
+}}
