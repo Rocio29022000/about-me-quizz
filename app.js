@@ -16,7 +16,7 @@ function quizA(){
     confirm("Oh wait almost forgot! 1 rule; please answer with yes/no or y/n. If not... you will regret...Amazing now that thats clear! Are you ready?")
     let points = 0
     for (let i = 0; i < questions.length; i ++){
-        ans = prompt(questions[i]).toLocaleLowerCase()
+        ans = prompt(questions[i]).toLowerCase()
         if (ans == answers[i] || ans == poss_ans[i] ){
             alert("Correct!")
             points ++
