@@ -1,0 +1,18 @@
+body{
+    background-color: aquamarine;
+}
+
+h1{
+    text-align: center;
+    border: solid;
+
+}
+
+section{
+    border: solid;
+    margin: 5px
+}
+
+button{
+    size: 20 px;
+}
