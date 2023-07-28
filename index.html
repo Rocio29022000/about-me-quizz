@@ -6,6 +6,8 @@
     <title>Document</title>
     <meta name="description" content="This is an about me quizz for 201 labs....">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
     <script src="app.js">;</script>
 </head>
 <body>
@@ -13,63 +15,77 @@
         <h1> Welcome to my About me quiz!</h1>
     </header>
     <main>
-        <section>
-            <h2>Biography</h2> 
-            <p >My name is Rocio Carmona, I am 23 and I come from a small town between 
-                Granada and Malaga in the south of Spain.</p>
-            <p>I have 3 siblings... and I am the youngest by far... 
-                My eldest sister, Encarni, is 47, followed by my sister Elisabeth who is 44, 
-                and my brother, Jose, is 40. Big difference aye!</p>
-        </section>
-        <section>
-            <h2>Education </h2>
-            <p> I was in the same school for 15 years! From early years through to A-levels, 
-                called Almunecar International School. </p>
-            <p> Then I moved on to Leeds to join The University of Leeds, 
-                where I did a Medical Engineering integrated masters degree. 
-                Where I graduated last summer with a first class Honours degree! Yay! </p>
-        </section>
-        <section>
-            <h2>Professional experience</h2>
-            <p> I have a very short professional experience... 
-                Just as I graduated Uni I joined CMR Surgical to work as a Graduate portfolio Strategist. 
-                But I recently got made redundant due to the company downsizing big time :( </p>
-        </section>
-        <section>
-            <h2>Goals</h2>
-            <p> The main goal in my life is to leave this world having done something that has made 
-                it a better place! This is why I went for the MedTech industry! My greatest passion is to 
-                use my knowledge and skills to problem solve challenges that could have an impact on someones 
-                quality of life.</p>
-        </section>
-
-        <button class="button-style" type="button" onclick="quizA()"> Start quizz!</button>
-        <button class="button-style" type="button" onclick="numberGuesser()"> Number guesser</button>
-        <button class="button-style" type="button" onclick="seventhQ()"> Guessing game</button>
+        <article>
+            <section>
+                <h2>Biography</h2> 
+                <p >My name is Rocio Carmona, I am 23 and I come from a small town between 
+                    Granada and Malaga in the south of Spain.</p>
+                <p>I have 3 siblings... and I am the youngest by far... 
+                    My eldest sister, Encarni, is 47, followed by my sister Elisabeth who is 44, 
+                    and my brother, Jose, is 40. Big difference aye!</p>
+            </section>
+            <section>
+                <h2>Education </h2>
+                <p> I was in the same school for 15 years! From early years through to A-levels, 
+                    called Almunecar International School. </p>
+                <p> Then I moved on to Leeds to join The University of Leeds, 
+                    where I did a Medical Engineering integrated masters degree. 
+                    Where I graduated last summer with a first class Honours degree! Yay! </p>
+            </section>
+            <section>
+                <h2>Professional experience</h2>
+                <p> I have a very short professional experience... 
+                    Just as I graduated Uni I joined CMR Surgical to work as a Graduate portfolio Strategist. 
+                    But I recently got made redundant due to the company downsizing big time :( </p>
+            </section>
+            <section>
+                <h2>Goals</h2>
+                <p> The main goal in my life is to leave this world having done something that has made 
+                    it a better place! This is why I went for the MedTech industry! My greatest passion is to 
+                    use my knowledge and skills to problem solve challenges that could have an impact on someones 
+                    quality of life.</p>
+            </section>
+        </article>
         
-        <h2>For a bit more information...</h2>
-        <h3> Top 10 Places I have visited</h3>
-        <ol>
-            <li>Byron Bay, Australia</li>
-            <li>Taghazout, Morocco</li>
-            <li>Val'd'Aran, Spain</li>
-            <li>Combarro, Spain</li>
-            <li>Split, Croatia</li>
-            <li>Lanzarote, Spain</li>
-            <li>Alberobello, Italy</li>
-            <li>Mostar, Bosnia & Herzegovina</li>
-            <li>Sydney, Australia</li>
-            <li>Salzburg, Austria</li>
-        </ol>
-        <h3>Intruments that I play</h3>
-        <ul>
-            <li>Guitar</li>
-            <li>Piano</li>
-            <li>Bass</li>
-            <li>Drums</li>
-            <li>Ukelele</li>
-            <li>Violin</li>
-        </ul>
+        <div class = "buttons">
+            <button class="button-style" type="button" onclick="quizA()"> Start quizz!</button>
+            <button class="button-style" type="button" onclick="numberGuesser()"> Number guesser</button>
+            <button class="button-style" type="button" onclick="seventhQ()"> Guessing game</button>
+        </div>
+
+
+        <article class = "extra">
+            <h2>For a bit more information...</h2>
+
+            <section>
+                <h3> Top 10 Places I have visited</h3>
+                    <ol>
+                        <li>Byron Bay, Australia</li>
+                        <li>Taghazout, Morocco</li>
+                        <li>Val'd'Aran, Spain</li>
+                        <li>Combarro, Spain</li>
+                        <li>Split, Croatia</li>
+                        <li>Lanzarote, Spain</li>
+                        <li>Alberobello, Italy</li>
+                        <li>Mostar, Bosnia & Herzegovina</li>
+                        <li>Sydney, Australia</li>
+                        <li>Salzburg, Austria</li>
+                    </ol>
+            </section>
+        <section>
+            <h3>Intruments that I play</h3>
+                <ul>
+                    <li>Guitar</li>
+                    <li>Piano</li>
+                    <li>Bass</li>
+                    <li>Drums</li>
+                    <li>Ukelele</li>
+                    <li>Violin</li>
+                </ul>
+        </section>
+        
+        </article>
+        
     </main>
     <footer>
 

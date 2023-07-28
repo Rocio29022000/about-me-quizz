@@ -1,18 +1,44 @@
 body{
     background-color: aquamarine;
+    font-family: "Sofia", sans-serif;
+
 }
 
 h1{
     text-align: center;
     border: solid;
+    padding: 20px;
 
 }
 
 section{
     border: solid;
-    margin: 5px
+    margin: 5px;
+    padding: 10px;
 }
 
 button{
     size: 20 px;
 }
+
+article{
+    align-content: center;
+    border: solid;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    border: solid;
+}
+
+.extra {
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
